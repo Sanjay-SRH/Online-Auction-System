@@ -1,0 +1,28 @@
+[2026-04-30 22:24:44] [INFO] === Online Auction System – Server Starting ===
+[2026-04-30 22:24:44] [INFO] Loaded 0 users from disk
+[2026-04-30 22:24:44] [INFO] Loaded 0 items from disk
+[2026-04-30 22:24:44] [INFO] Loaded 0 bids from disk
+[2026-04-30 22:24:44] [INFO] Default accounts seeded (admin/admin123, seller1/seller123, bidder1/bidder123)
+[2026-04-30 22:24:44] [INFO] Signal handlers installed (SIGINT, SIGTERM, SIGUSR1)
+[2026-04-30 22:24:44] [INFO] Shared memory board initialized (id=0)
+[2026-04-30 22:24:44] [INFO] Auction server listening on port 9090
+[2026-04-30 22:25:06] [INFO] New connection from 127.0.0.1
+[2026-04-30 22:25:06] [INFO] Client thread started (sock=5)
+[2026-04-30 22:25:21] [INFO] New connection from 127.0.0.1
+[2026-04-30 22:25:21] [INFO] Client thread started (sock=6)
+[2026-04-30 22:25:29] [INFO] New connection from 127.0.0.1
+[2026-04-30 22:25:29] [INFO] Client thread started (sock=7)
+[2026-04-30 22:25:37] [INFO] New connection from 127.0.0.1
+[2026-04-30 22:25:37] [INFO] Client thread started (sock=8)
+[2026-04-30 22:25:48] [INFO] User 'admin' logged in (role=Admin)
+[2026-04-30 22:25:57] [INFO] User 'seller1' logged in (role=Auctioneer)
+[2026-04-30 22:26:07] [INFO] User 'bidder1' logged in (role=Bidder)
+[2026-04-30 22:26:57] [INFO] User 'bidder2' logged in (role=Bidder)
+[2026-04-30 22:27:42] [INFO] Client disconnected (sock=6)
+[2026-04-30 22:28:11] [INFO] New connection from 127.0.0.1
+[2026-04-30 22:28:11] [INFO] Client thread started (sock=9)
+[2026-04-30 22:28:17] [INFO] User 'seller1' logged in (role=Auctioneer)
+[2026-04-30 22:31:08] [INFO] Bid placed: item=1 bidder=3 amount=40.00
+[2026-04-30 22:31:30] [WARN] Bid on unknown item 40
+[2026-04-30 22:31:39] [WARN] Bid 30.00 too low; minimum is 50.00
+[2026-04-30 22:31:49] [INFO] Bid placed: item=1 bidder=4 amount=50.00
