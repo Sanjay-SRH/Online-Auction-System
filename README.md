@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔨 Online Auction System
+# Online Auction System
 
 **A Multi-Threaded Client-Server Auction Platform**
 
