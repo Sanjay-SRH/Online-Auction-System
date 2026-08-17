@@ -16,27 +16,6 @@
 
 ---
 
-## 📋 Table of Contents
-
-- [Problem Statement](#-problem-statement)
-- [Project Overview](#-project-overview)
-- [System Architecture](#-system-architecture)
-- [OS Concepts Implemented](#-os-concepts-implemented)
-  - [4.1 Role-Based Authorization](#41-role-based-authorization)
-  - [4.2 File Locking](#42-file-locking)
-  - [4.3 Concurrency Control](#43-concurrency-control)
-  - [4.4 Data Consistency](#44-data-consistency)
-  - [4.5 Socket Programming](#45-socket-programming)
-  - [4.6 Inter-Process Communication (IPC)](#46-inter-process-communication-ipc)
-- [Project Structure](#-project-structure)
-- [Installation & Setup](#-installation--setup)
-- [Usage](#-usage)
-- [Challenges & Solutions](#-challenges--solutions)
-- [Limitations & Future Work](#-limitations--future-work)
-- [OS Concept Coverage Summary](#-os-concept-coverage-summary)
-
----
-
 ## 🎯 Problem Statement
 
 Traditional auction systems are either manual, error-prone, or rely on centralised web infrastructure that is difficult to inspect for OS-level behaviour. This project designs and implements a fully functional **Online Auction System from first principles**, using only **POSIX system calls and C standard libraries** — no high-level frameworks.
