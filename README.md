@@ -6,17 +6,11 @@
 
 *EGC 301P – Operating Systems Laboratory Mini Project*
 
-![Platform](https://img.shields.io/badge/Platform-Linux-blue?style=flat-square&logo=linux)
-![Language](https://img.shields.io/badge/Language-C%20(POSIX)-orange?style=flat-square&logo=c)
-![Threads](https://img.shields.io/badge/Threads-pthreads-green?style=flat-square)
-![Sockets](https://img.shields.io/badge/Sockets-TCP%2FIP-purple?style=flat-square)
-![License](https://img.shields.io/badge/License-Academic-red?style=flat-square)
-
 </div>
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 
 Traditional auction systems are either manual, error-prone, or rely on centralised web infrastructure that is difficult to inspect for OS-level behaviour. This project designs and implements a fully functional **Online Auction System from first principles**, using only **POSIX system calls and C standard libraries** — no high-level frameworks.
 
@@ -32,13 +26,13 @@ The system supports three distinct user roles — **Administrator**, **Auctionee
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 The Online Auction System is a Linux-based, multi-threaded client-server application written in C. Users connect over TCP, authenticate with a username/password, and are routed to a role-specific interactive dashboard. All persistent data is stored in binary flat files with `fcntl` advisory locks ensuring safe concurrent access.
 
 ### Features by Role
 
-#### 🔴 Administrator
+#### Administrator
 | Feature | Description |
 |---|---|
 | User Management | Add, list, and disable user accounts |
@@ -46,7 +40,7 @@ The Online Auction System is a Linux-based, multi-threaded client-server applica
 | Item Visibility | View all items across all statuses (Pending / Active / Sold / Expired) |
 | Account | Change own password |
 
-#### 🔵 Auctioneer
+#### Auctioneer
 | Feature | Description |
 |---|---|
 | Create Items | Add auction items with starting price and minimum bid increment |
@@ -55,7 +49,7 @@ The Online Auction System is a Linux-based, multi-threaded client-server applica
 | Manage | Remove pending items, close own active auctions |
 | View Bids | See full bid history for any item |
 
-#### 🟢 Bidder
+#### Bidder
 | Feature | Description |
 |---|---|
 | Browse | View active auctions with live time-remaining countdown |
@@ -65,7 +59,7 @@ The Online Auction System is a Linux-based, multi-threaded client-server applica
 
 ---
 
-## 🏗 System Architecture
+## System Architecture
 
 The system follows a **client-server architecture** over TCP/IP. The server spawns one detached POSIX thread per accepted connection. All shared in-memory state is protected by a `pthread_mutex`. Disk state is protected by `fcntl` write/read locks. A POSIX shared-memory segment holds a live scoreboard readable by any process without a network call.
 
@@ -96,7 +90,7 @@ auction_client   ◄────────► auction_client
 
 ---
 
-## ⚙️ OS Concepts Implemented
+## OS Concepts Implemented
 
 ### 4.1 Role-Based Authorization
 
@@ -255,7 +249,7 @@ static void sig_handler(int sig) {
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 online-auction-system/
@@ -276,7 +270,7 @@ online-auction-system/
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### Requirements
 
@@ -320,7 +314,7 @@ On first run the server seeds three default accounts:
 
 ---
 
-## 🖥 Usage
+## Usage
 
 ### Start the Server
 ```bash
@@ -350,7 +344,7 @@ Ctrl+C   →   SIGINT triggers graceful shutdown + shared memory cleanup
 
 ---
 
-## 🧩 Challenges & Solutions
+## Challenges & Solutions
 
 | Challenge | Solution |
 |---|---|
@@ -363,7 +357,7 @@ Ctrl+C   →   SIGINT triggers graceful shutdown + shared memory cleanup
 
 ---
 
-## 🔮 Limitations & Future Work
+## Limitations & Future Work
 
 ### Current Limitations
 
@@ -384,7 +378,7 @@ Ctrl+C   →   SIGINT triggers graceful shutdown + shared memory cleanup
 
 ---
 
-## 📊 OS Concept Coverage Summary
+## OS Concept Coverage Summary
 
 | Guideline | Concept | Files / Functions |
 |---|---|---|
